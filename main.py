@@ -29,6 +29,7 @@ def make_soup(product_url):
     response = safe_requests.get(product_url,headers=request_header)
     soup = BeautifulSoup(response.text, 'lxml')
     return soup
+    
 my_url = ("https://www.amazon.com/"
                                  "Neumann-Diaphragm-Microphone-Suspension-Shockmount/"
                                  "dp/B0753KLBT4/ref=sr_1_8?crid=20K0SQ7WG6913&keywords=neumann+microphone"
